@@ -739,7 +739,7 @@ a.CategoryPageLink:hover, a.CategoryPageLink:active{
 	cursor: pointer;
 }
 .paginateItems:not(#paginateItem13){
-	margin-right: -1.0rem;	
+	margin-right: -1.5rem;	
 }
 #paginateItem1{
 	background: #337ab7;
