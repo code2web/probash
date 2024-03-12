@@ -1,0 +1,285 @@
+/* 1200px 1024px. 980px 768px. 480px. */
+@media only screen and (max-width: 1200px) {
+	.content{
+		width: 19.5rem;
+	}
+}
+@media only screen and (max-width: 1024px) {
+	html{
+		font-size: 57.5%;
+	}
+
+	.content{
+		width: 20rem;
+	}
+}
+@media only screen and (max-width: 980px) {
+	html{
+		font-size: 50.5%;
+	}
+
+	.btnDiffrent{
+		padding: .8rem;
+	}
+	.btnSide{
+		font-size: 1.1rem;
+	}
+
+	.leftSide {
+	    margin-bottom: 4rem;
+	    margin-top: -20rem;
+	}
+	.politicsDiv p{
+		font-size: 1.6rem;
+	}
+
+	.popular h1{
+		font-size: 1.2rem;
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 768px) {
+	html{
+		font-size: 45.5%;
+		/*	for mobile menu overflow*/
+		overflow-x: clip;
+	}
+	body{
+		/*	for mobile menu overflow*/
+		overflow-x: clip;
+	}
+	/*	for mobile menu*/
+	.topUp, .header{
+		display: none;
+	}
+	
+	.mobileNavbarDisplay{
+		display: block;
+	}
+	.mobileNavberBtn{
+		display: block;
+		z-index: 9999;
+		/*border: 2px solid #000;*/
+		color: #000;
+	}
+	.mobileNavberBtn .imgDiv{
+		width: 5rem;
+		height: 5rem;
+	}
+	/*.mobileNavIcon{
+		width: 5rem;
+		height: 5rem;
+		color: #000;
+	}*/
+	.forMobileSearch{
+		margin-top: 1rem;
+	}
+	.searchIcon{
+		font-size: 1.6rem;
+	}
+	.mobileBtnLanguage{
+		font-size: 1.6rem;
+		color: rgb(128 128 128 / 50%);
+		border: .1rem solid rgb(128 128 128 / 80%);
+		border-radius: .5rem;
+		padding: .5rem;
+		margin-left: .5rem;
+	}	
+	.mobileNavbar{
+		position: relative;
+		justify-content: space-between;
+	}
+
+	.navbarDiv{
+		width: 100%;
+		height: 100vh;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: #009688;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		transform: translateX(100%);
+		transition: all 0.5s linear;
+
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		z-index: 9999;
+	}
+
+	.active .navbarDiv{
+		transform: translateX(0%);
+
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+	}
+
+	.active .mobileNavberBtn .menuOutline{
+		display: none;
+	}
+	.active .mobileNavberBtn .closeOutline{
+		display: block;
+	}
+	/*
+	.active .mobileNavberBtn .mobileNavIcon[name="menu-outline"]{
+		display: none;
+	}
+	.active .mobileNavberBtn .mobileNavIcon[name="close-outline"]{
+		display: block;
+	}
+	*/
+	.scrollNavbarDiv{		
+		margin: 1.5vh 5vw;
+		overflow-x: auto;
+		color: #fff;
+		background: red;
+	}
+	.scrollNavbarDiv::-webkit-scrollbar{
+		width: 0;
+	}
+	a.scrollLink:link, a.scrollLink:visited{
+		font-size: 1.6rem;
+		color: #fff;
+		padding: 0 1rem;
+	}
+	/*	for mobile menu*/
+
+	.top{
+		grid-template-columns: 1fr;
+	}
+	.content{
+		width: 18rem;
+	}
+
+	.politicsNews{
+		grid-template-columns: 1fr;
+		margin-top: -95rem;
+	}
+	.followSide {
+		padding-bottom: 25%;
+	}
+
+	.daily{
+		grid-template-columns: 1fr;
+	}
+	.dailyRight{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+	}
+
+	.play{
+		grid-template-columns: 1fr;
+	}
+	.fRightTwo{
+		grid-template-columns: 1fr 5fr;
+	}
+	.playRight .imgDiv{
+		width: 8rem;		
+		height: 5rem;
+	}
+
+	.inter{
+		grid-template-columns: 1fr;
+	}
+	.interRight{
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.life{
+		grid-template-columns: 1fr;
+	}
+	.lifeLeft2 .imgDiv{
+		width: 8rem;		
+		height: 6rem;
+	}
+	.lifeRightTwo{
+		grid-template-columns: 1fr 5fr;
+	}
+	.lifeRight .imgDiv{
+		height: 5rem;
+	}
+
+	.tour{
+		grid-template-columns: 1fr;
+	}
+	.tourLeft2 .imgDiv{
+		width: 8rem;		
+		height: 6rem;
+	}
+	.headSide{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.tourRight .imgDiv{
+		width: 20rem;
+		height: 14rem;
+	}
+
+	.health{
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.CategoryPageHead{
+		padding: 0;
+	}
+	.CategoryPageunderSubHead{
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 480px) {
+	html{
+		font-size: 37%;
+	}
+	.mainIn{
+		display: none;
+	}
+	.sideScroll{
+		display: none;
+	}
+	
+	.under{
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.btn{
+		font-size: 1.6rem;
+	}
+	
+	.content{
+		height: 20rem;
+	    width: 13rem;
+	}
+
+	.politicsImg .imgDiv {
+	    width: 6.4rem;
+	}
+
+	.dailyLeft2 .imgDiv {
+	    width: 8rem;
+	    height: 5.8rem;
+	}
+
+	.videoSmall .imgDiv {
+	    width: 5.5rem;
+        height: 5.5rem;
+	}
+
+	.photoRight {
+	    grid-template-columns: 1fr;
+	}
+
+	.SinglePage .under{
+		margin-top: 0;
+	}
+
+	.footerBg{
+		padding: 1.8vh 1.8vw;	
+	}
+}
