@@ -1,0 +1,88 @@
+/* 1200px 1024px. 980px 768px. 480px. */
+@media only screen and (max-width: 1500px){
+	/*.contentDiffrent{
+		width: 25rem;
+	}*/
+}
+@media only screen and (max-width: 1200px) {		
+	.gcontainer{
+		gap: 1.4rem;
+	}
+	.fcontainer{
+		gap: 1.4rem;
+	}
+	.socialTopDiv{
+		gap: 0;
+	}
+
+	.logosRight1, .logosRight2{
+		gap: .1rem;
+	}
+
+	p{
+		font-size: 1.7rem;
+	}	
+
+	.contentDiffrent{
+		width: 19rem;
+	}	
+}
+
+@media only screen and (max-width: 1024px) {
+	html{
+		font-size: 60.5%;
+	}
+	.header{
+		gap: .5rem;
+	}
+	.logosRight1, .logosRight2{
+		gap: 0;
+	}
+}
+
+@media only screen and (max-width: 980px) {
+	/*	for mobile menu*/
+	.topUp, .header{
+		display: none;
+	}
+	.mobileNavbarDisplay{
+		display: block;
+	}
+	.mobileNavberBtn{
+		display: block;
+		z-index: 9999;
+		/*border: 2px solid #000;*/
+		color: #000;
+	}
+	.mobileNavberBtn .imgDiv{
+		width: 5rem;
+		height: 5rem;
+	}
+	.logoDiv .imgDiv{
+		margin-top: 0;
+	}
+	/*.mobileNavIcon{
+		width: 5rem;
+		height: 5rem;
+		color: #000;
+	}*/
+	
+	.forMobileSearch{
+		margin-top: 1rem;
+	}
+	.searchIcon{
+		font-size: 1.6rem;
+	}
+	.mobileBtnLanguage{
+		font-size: 1.6rem;
+		color: rgb(128 128 128 / 50%);
+		border: .1rem solid rgb(128 128 128 / 80%);
+		border-radius: .5rem;
+		padding: .5rem;
+		margin-left: .5rem;
+	}	
+	.mobileNavbar{
+		position: relative;
+		justify-content: space-between;
+	}
+}
