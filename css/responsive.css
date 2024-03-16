@@ -314,6 +314,13 @@
 		font-size: 56.5%;
 	}
 
+	.linkNavDiv{
+		padding: 0;
+	}
+	.scrollNavbarDiv a.linkNav:link, a.linkNav:visited{
+		padding: 0 1rem;
+	}
+
 	.CategoryPagetourLeft2 .imgDiv{
 		width: 11.8rem;
 		height: 6.1rem;
