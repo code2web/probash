@@ -189,6 +189,7 @@
 	}
 	.scrollNavbarDiv::-webkit-scrollbar{
 		width: 0;
+		height: .5rem;
 	}
 	.scrollNavbarDiv a.linkNav:link, a.linkNav:visited{
 		color: #fff;				
