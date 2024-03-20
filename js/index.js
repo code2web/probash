@@ -28,3 +28,13 @@ searchHoverClose.addEventListener('click', () => {
 	mobileNavbarDisplay.style.display= 'block';
 });
 /*searchHover mobile*//*searchHover mobile*/
+
+/*defaultImg*//*defaultImg*//*defaultImg*/
+const img = document.getElementsByTagName('img')
+for (var i = 0; i < img.length; i++) {
+	img[i].onerror = function(event) {
+		event.target.src = 'img/default.jpg'
+		img.onerror = null
+	}
+}
+/*defaultImg*//*defaultImg*//*defaultImg*/

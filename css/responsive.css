@@ -316,6 +316,10 @@
 	.photoRight{
 		grid-template-columns: repeat(3, 1fr);
 		gap: .5rem;
+		margin-left: 0;
+	}
+	.photoRight a{
+		margin-bottom: 0;
 	}
 	.photoRightTwo{
 		grid-template-columns: repeat(2, 1fr);
@@ -346,9 +350,10 @@
 	.SingleMain .imgDiv{
 		height: 30rem;
 	}
+
 	.last p{
 		line-height: 1.8rem;		
-	}
+	}		
 }
 
 @media only screen and (max-width: 768px) {
