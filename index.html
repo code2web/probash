@@ -220,10 +220,13 @@
 </div>
 <!-- ================================MobileNAVBAR End================================ -->
 <!-- mobile Main Heading -->
-<div class="mobile overlay">
-	<div class="imgDiv"><img src="img/all.jpg" alt=""></div>
-	<h2 class="overlayHead">ট্রাব স্মার্ট পারফরম্যান্স অ্যাওয়ার্ড পেলেন বসুন্ধরা এমডি</h2>
+<div class="mobile overlayParent">
+	<div class="overlay">
+		<div class="imgDiv"><img src="img/all.jpg" alt=""></div>
+		<h2 class="overlayHead">ট্রাব স্মার্ট পারফরম্যান্স অ্যাওয়ার্ড পেলেন বসুন্ধরা এমডি</h2>
+	</div>
 </div>
+
 <!-- under tow column -->
 <div class="mobile gmcontainer underMobile">
 	<a class="content">
@@ -458,10 +461,12 @@
 	<div class="CategoryPageNameDiv">
 		<a href="" class="linkNav"><i class="fa fa-home CategoryPageIcon"> &nbsp;</i></a><span>/ &nbsp;</span><span class="CategoryPageName">রাজনীতি</span>
 	</div>
-	<div class="overlay">
-		<div class="imgDiv"><img src="img/all.jpg" alt=""></div>
-		<h2 class="overlayHead">ট্রাব স্মার্ট পারফরম্যান্স অ্যাওয়ার্ড পেলেন বসুন্ধরা এমডি</h2>
-	</div>
+	<div class="overlayParent">
+		<div class="overlay">
+			<div class="imgDiv"><img src="img/all.jpg" alt=""></div>
+			<h2 class="overlayHead">ট্রাব স্মার্ট পারফরম্যান্স অ্যাওয়ার্ড পেলেন বসুন্ধরা এমডি</h2>
+		</div>
+	</div>	
 	<div class="fmcontainer tourLeft2 CategoryPagetourLeft2">
 	<a>
 		<div class="imgDiv"><img src="img/all.jpg" alt=""></div>
@@ -1245,26 +1250,36 @@
 <section class="gcontainer photo">
 	<!-- ================================PHOTO-LEFT START================================ -->
 	<div class="photoLeft">
-		<div class="overlay">
-			<span class="ps-prev">
-				<span class="ps-prevIcon"></span>
+		<div class="overlayParent">
+			<span class="prev" onclick="plusSlides(-1)">
+				<span class="prevIcon"></span>
 			</span>
-			<span class="ps-next">
-				<span class="ps-nextIcon"></span>
+			<span class="next" onclick="plusSlides(1)">
+				<span class="nextIcon"></span>
 			</span>
-			<div class="imgDiv"><img src="img/all.jpg" alt=""></div>
-			<h2 class="overlayHead">ট্রাব স্মার্ট পারফরম্যান্স অ্যাওয়ার্ড পেলেন বসুন্ধরা এমডি</h2>
-		</div>
+			<div class="overlay mySlides fade">				
+				<div class="imgDiv"><img src="img/all.jpg" alt=""></div>
+				<h2 class="overlayHead">ট্রাব স্মার্ট পারফরম্যান্স অ্যাওয়ার্ড পেলেন বসুন্ধরা এমডি</h2>
+			</div>
+			<div class="overlay mySlides fade">				
+				<div class="imgDiv"><img src="img/default.jpg" alt=""></div>
+				<h2 class="overlayHead">ট্রাব স্মার্ট পারফরম্যান্স অ্যাওয়ার্ড পেলেন বসুন্ধরা এমডি</h2>
+			</div>
+			<div class="overlay mySlides fade">				
+				<div class="imgDiv"><img src="img/cartoon-1280-1280.jpg" alt=""></div>
+				<h2 class="overlayHead">ট্রাব স্মার্ট পারফরম্যান্স অ্যাওয়ার্ড পেলেন বসুন্ধরা এমডি</h2>
+			</div>
+		</div>		
 		<div class="fcontainer overlayBot">
-			<span class="ps-prev">
-				<span class="ps-prevIcon"></span>
+			<span class="prev" onclick="plusSlides(-1)">
+				<span class="prevIcon"></span>
 			</span>
-			<span class="ps-next">
-				<span class="ps-nextIcon"></span>
+			<span class="next" onclick="plusSlides(1)">
+				<span class="nextIcon"></span>
 			</span>
-			<div class="overlaySmall"><div class="imgDiv"><img src="img/all.jpg" alt=""></div></div>
-			<div class="overlaySmall"><div class="imgDiv ps-selected"><img src="img/all.jpg" alt=""></div></div>
-			<div class="overlaySmall"><div class="imgDiv"><img src="img/all.jpg" alt=""></div></div>
+			<div class="overlaySmall" onclick="currentSlide(1)"><div class="imgDiv dot"><img src="img/all.jpg" alt=""></div></div>
+			<div class="overlaySmall" onclick="currentSlide(2)"><div class="imgDiv dot"><img src="img/default.jpg" alt=""></div></div>
+			<div class="overlaySmall" onclick="currentSlide(3)"><div class="imgDiv dot"><img src="img/cartoon-1280-1280.jpg" alt=""></div></div>
 		</div>
 	</div>
 	<!-- ================================PHOTO-LEFT END================================ -->
