@@ -178,6 +178,7 @@
 		font-weight: bold;
 		margin-top: -2rem;
 		margin-bottom: -2rem;
+		cursor: pointer;
 	}
 	.searchHoverInput{
 		border: none;	
@@ -261,7 +262,7 @@
 		color: red;
 	}	
 
-	h5{
+	/*h5{
 		margin: 3rem auto;
 		color: #000;
 		font-size: 2.5rem;
@@ -291,27 +292,64 @@
 	h5.singleMobileHead:after{
 		width: 0;
 		height: 0;
-	}
+	}*/
 	.italic{
 		font-style: italic;
 	}
 
-	.playHead{
-		color: #09B7F1;
+	.boxTitle {
+	    position: relative;
+	    border-left: 12px solid rgb(190, 49, 40);
+	    float: left;
+	    width: 100%;
+	    margin-bottom: 15px;
 	}
+	.boxTitle:before {
+	    content: '';
+	    background: #be3128;
+	    height: 3px;
+	    display: block;
+	    width: 100%;
+	    position: absolute;
+	    left: 0;
+	    top: 20px;
+	    z-index: -1;
+	}
+	.boxTitle h5 {
+	    padding: 10px 5px 10px 15px;
+	    font-size: 18px;
+	    color: #333;
+	    background: #fff;
+	    float: left;
+	}
+	.boxTitle h5 a {
+	    text-decoration: none;
+	    color: #333;
+	    float: left;
+	}
+	.boxTitle h5 a.playHead{
+		color: #00bfff;
+	}
+	.clear{
+		clear: both;
+	}
+	.boxTitle.singleMobileHead:before{
+	    width: 0%;
+	}
+
 	.btnNot{
 		font-size: 1.8rem;
 		padding-left: 25%;
 		cursor: pointer;
 	}
 	.btnNot:first-child{
-		color: #368098;
+		color: #008b8b;
 	}
 	.btnNot:nth-child(2){
-		color: #B72728;
+		color: #cd5c5c;
 	}
 	.btnNot:last-child{
-		color: #658733;
+		color: #9acd32;
 	}
 
 	.photoRight{
